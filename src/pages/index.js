@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 // import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
 
+
 import thumb01 from '../assets/images/thumbs/01.jpg'
 import thumb02 from '../assets/images/thumbs/02.jpg'
 import thumb03 from '../assets/images/thumbs/03.jpg'
@@ -31,7 +32,7 @@ const DEFAULT_IMAGES = [
 class HomeIndex extends React.Component {
 
     render() {
-        const siteTitle = "Gatsby Starter - Strata"
+        const siteTitle = "Hayden Schultz"
         const siteDescription = "Site description"
 
         return (
@@ -45,13 +46,9 @@ class HomeIndex extends React.Component {
 
                     <section id="one">
                         <header className="major">
-                            <h2>Ipsum lorem dolor aliquam ante commodo<br />
-                            magna sed accumsan arcu neque.</h2>
+                            <h1>Hi, I'm Hayden,</h1>
                         </header>
-                        <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
-                        <ul className="actions">
-                            <li><a href="#" className="button">Learn More</a></li>
-                        </ul>
+                        <h2>A passionate web developer who will quickly and cost-effectively solve problems and, consistently deliver a quality product.</h2>
                     </section>
 
                     <section id="two">
@@ -63,50 +60,91 @@ class HomeIndex extends React.Component {
                             caption,
                             description
                         }))} />
-
-                        <ul className="actions">
-                            <li><a href="#" className="button">Full Portfolio</a></li>
-                        </ul>
                     </section>
-
+                <section id="one">
+                        <h2>Skills</h2>
+                        <div className="Skills">
+                        JavaScript
+                        <br></br>
+                        React
+                        <br></br>
+                        Node.js
+                        <br></br>
+                        Gatsby.js
+                        <br></br>
+                        Express
+                        <br></br>
+                        Python
+                        <br></br>
+                        JQuery
+                    </div>
+                    <div className="Skills">
+                        CSS
+                        <br></br>
+                        HTML
+                        <br></br>
+                        Typescript
+                        <br></br>
+                        EJS
+                        <br></br>
+                        ES6
+                        <br></br>
+                        JSX
+                        <br></br>
+                        Git
+                        </div>
+                    <div className="Skills">
+                        AJAX
+                        <br></br>
+                        Axios
+                        <br></br>
+                        Fetch
+                        <br></br>
+                        Phaser.io
+                        <br></br>
+                        Bootstrap
+                        <br></br>
+                        Materialize
+                        <br></br>
+                        Heroku
+                        </div>
+                    <div className="Skills">
+                        SQL
+                        <br></br>
+                        PostgreSQL
+                        <br></br>
+                        Sequelize
+                        <br></br>
+                        MongoDB
+                        <br></br>
+                        Mongoose
+                        <br></br>
+                        Django
+                        <br></br>
+                        Material-UI
+                </div>
+              </section>
+              <section id="one">
+              <div className="">
+                <h2 className="AboutTitles">Methodologies</h2>
+                <div className="Methods">Object Oriented Programming | MVC Pattern  </div>
+                <div className="Methods">Authentication (OAuth/Sesssions/Tokens)  </div>
+                <div className="Methods">Responsive Design | RESTful Routing</div>
+                <div className="Methods">Test-Driven Development | CRUD Operations</div>
+            </div>
+              </section>
                     <section id="three">
                         <h2>Get In Touch</h2>
-                        <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
-                        <div className="row">
-                            <div className="8u 12u$(small)">
-                                <form method="post" action="#">
-                                    <div className="row uniform 50%">
-                                        <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                                        <div className="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-                                        <div className="12u"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-                                    </div>
-                                </form>
-                                <ul className="actions">
-                                    <li><input type="submit" value="Send Message" /></li>
-                                </ul>
-                            </div>
-                            <div className="4u 12u$(small)">
-                                <ul className="labeled-icons">
-                                    <li>
-                                        <h3 className="icon fa-home"><span className="label">Address</span></h3>
-                                        1234 Somewhere Rd.<br />
-                                        Nashville, TN 00000<br />
-                                        United States
-                                    </li>
-                                    <li>
-                                        <h3 className="icon fa-mobile"><span className="label">Phone</span></h3>
-                                        000-000-0000
-                                    </li>
-                                    <li>
-                                        <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
-                                        <a href="#">hello@untitled.tld</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-
-                </div>
+                        <p>Please don't hesitate to reach out. I love connecting with other folks who are passionate about tech.</p>
+                        <div id="footer">
+                    <div className="row">
+                        <div class="3u 12u$(small)"><ul class="labeled-icons"><li><h1><a href="https://drive.google.com/file/d/1xjT9XOI_r7VLvjETdyI0Uw8S85zV7qTR/view" class="icon fa-file"><span class="label">Resume</span></a></h1></li></ul></div>
+                        <div class="3u 12u$(small)"><ul class="labeled-icons"><li><h1><a href="https://github.com/kellogsfrost" class="icon fa-github"><span class="label">Github</span></a></h1></li></ul></div>
+                        <div class="3u 12u$(small)"><ul class="labeled-icons"><li><h1><a href="https://www.linkedin.com/in/hayden-schultz/" class="icon fa-linkedin"><span class="label">Linked In</span></a></h1></li></ul></div>
+                    </div>
+                    </div>
+                        </section>
+                    </div>
 
             </Layout>
         )

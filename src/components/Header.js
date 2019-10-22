@@ -1,7 +1,8 @@
 import React from 'react'
 
 import Footer from './Footer'
-import avatar from '../assets/images/avatar.jpg'
+import avatar from '../assets/images/headshot.jpg'
+
 
 class Header extends React.Component {
     render() {
@@ -9,9 +10,8 @@ class Header extends React.Component {
             <header id="header">
                 <div className="inner">
                     <a href="#" className="image avatar"><img src={avatar} alt="" /></a>
-                    <h1><strong>I am Strata</strong>, a super simple<br />
-                    responsive site template freebie<br />
-                    crafted by <a href="http://html5up.net">HTML5 UP</a>.</h1>
+                    <h1 className="sideBar"><strong>Hayden Schultz</strong></h1>
+                    <h2 className="sideBar">Full-Stack Web Devloper</h2>
                 </div>
                 <Footer />
             </header>
