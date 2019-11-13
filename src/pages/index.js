@@ -6,19 +6,19 @@ import Layout from '../components/layout'
 import Gallery from '../components/Gallery'
 
 
-import thumb01 from '../assets/images/thumbs/01.jpg'
-import thumb02 from '../assets/images/thumbs/02.jpg'
+import thumb01 from '../assets/images/fulls/ship.png'
+import thumb02 from '../assets/images/fulls/JobTraker.png'
 import thumb03 from '../assets/images/thumbs/03.jpg'
 
-import full01 from '../assets/images/fulls/01.jpg'
-import full02 from '../assets/images/fulls/02.jpg'
+import full01 from '../assets/images/fulls/ship.png'
+import full02 from '../assets/images/fulls/JobTraker.png'
 import full03 from '../assets/images/fulls/03.jpg'
 
 
+
 const DEFAULT_IMAGES = [
-    { id: '1', source: full01, thumbnail: thumb01, caption: 'Photo 1', description: 'War for the Stars'},
-    { id: '2', source: full02, thumbnail: thumb02, caption: 'Photo 2', description: 'Jam-Band'},
-    { id: '3', source: full03, thumbnail: thumb03, caption: 'Photo 3', description: 'Contractor-Sample'},
+    { id: '1', link:'https://warforthestars.netlify.com/', source: full01, thumbnail: thumb01, description: 'War for the Stars'},
+    { id: '2', link:'https://morning-cliffs-94208.herokuapp.com/',source: full02, thumbnail: thumb02,  description: 'JobTracker'},
 ];
 
 class HomeIndex extends React.Component {
@@ -46,10 +46,11 @@ class HomeIndex extends React.Component {
                     <section id="two">
                         <h2>Recent Work</h2>
 
-                        <Gallery images={DEFAULT_IMAGES.map(({ id, source, caption, description }) => ({
+                        <Gallery images={DEFAULT_IMAGES.map(({ link, thumbnail, source, description }) => ({
                             source,
-                            caption,
-                            description
+                            thumbnail,
+                            description,
+                            link,
                         }))} />
                     </section>
                 <section id="one">
